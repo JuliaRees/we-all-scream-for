@@ -1,21 +1,21 @@
 // A $( document ).ready() block.
-$( document ).ready(function() {
+$( document ).ready(function(){
     
     $('.hamburger-button').click(function(){
         $('.mobile-menu').fadeToggle(100);
         $(this).toggleClass('active');
     });
+  });
 
 // Icecream flavor 
 
-    $('#icecream-button').click(function(){
+$('#icecream-button').click(function(){
   
         let icecreamOptions = [
-          'Italian',
-          'Chinese',
-          'Japanese',
-          'Australian',
-          'French'
+          'vanilla cream',
+          'strawberry swirl',
+          'chocolate swirl',
+          'cookies & cream delight'
         ]
       
         let icecreamSuggestion = icecreamOptions[Math.floor(Math.random()*icecreamOptions.length)];
