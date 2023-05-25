@@ -1,0 +1,72 @@
+---
+layout: default
+title: Gallery
+gallery:
+ - column-size: col-4_sm-12
+   aspect-ratio: square
+   background_image: /images/bg-img-1.png
+ - column-size: col-4_sm-12
+   aspect-ratio: square
+   background_image: /images/bg-img-2.png
+ - column-size: col-4_sm-12
+   aspect-ratio: square
+   background_image: /images/bg-img-3.png
+ - column-size: col-4_sm-12
+   aspect-ratio: square
+   background_image: /images/bg-img-4.png
+ - column-size: col-12
+   aspect-ratio: landscape
+   background_image: /images/bg-img-5.png
+ - column-size: col-6
+   aspect-ratio: landscape
+   background_image: /images/bg-img-6.png
+ - column-size: col-6
+   aspect-ratio: landscape
+   background_image: /images/bg-img-7.png
+---
+
+<!-------------Header Banner----------------->
+
+<!-------------Gallery----------------->
+
+
+
+<!---Popup Gallery-->
+
+<section class="padded {{page.gallery-background}}">
+
+    <h2> Popup Gallery </h2>
+    <div class="gallery grid" id="lightgallery">
+
+        {% for item in page.gallery %}
+
+        <a class="{{item.column-size}} gallery-item" href="{{item.background_image}}">
+            <div class="bg-image {{item.aspect-ratio}}" style="background-image:url('{{item.background_image}}');"></div>
+        </a>
+
+        {% endfor %}
+
+    </div>
+
+</section>
+
+
+<!---Popup Gallery Nr. 2-->
+
+<section class="padded">
+
+    <h2> Popup Gallery 2 </h2>
+    <div class="gallery grid" id="lightgallery-2">
+
+        <a class="button" href="/images/bg-img-7.png" title="UGC 0">
+            View more
+        </a>
+        <a href="/images/bg-img-6.png" title="UGC 1"></a>
+        <a href="/images/bg-img-5.png" title="UGC 2"></a>
+        <a href="/images/bg-img-4.png" title="UGC 3"></a>
+        <a href="/images/bg-img-3.png" title="UGC 4"></a>
+
+
+    </div>
+
+</section>
